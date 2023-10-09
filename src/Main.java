@@ -7,8 +7,8 @@ public class Main {
         getInput("What is the length of the first side?", 0);
         getInput("What is the length of the second side?", 1);
 
-        System.out.printf("The area of your rectangle is: %.02f\n", rectInfo[0] * rectInfo[1]);
-        System.out.printf("The perimeter of your rectangle is: %.02f", (rectInfo[0] * 2) + (rectInfo[1]*2));
+        System.out.printf("%-40s %.02f\n", "The area of your rectangle is:", rectInfo[0] * rectInfo[1]);
+        System.out.printf("%-40s %.02f", "The perimeter of your rectangle is:", (rectInfo[0] * 2) + (rectInfo[1]*2));
     }
 
     private static void getInput(String question, int outputIndex) {
